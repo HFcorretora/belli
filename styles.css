@@ -1,0 +1,276 @@
+/* Reset e base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid #e5e7eb;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Hero */
+.hero {
+  background-color: #b22222; /* vermelho fogo */
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero .logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.btn-negociar {
+  background-color: #ffffff; /* vermelho escuro */
+  color: #b22222; /* vermelho fogo */
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-negociar:hover {
+  background-color: #a40000; /* vermelho médio */
+}
+
+/* Seção Como Funciona */
+.etapas {
+  padding: 3rem 1rem;
+  background-color: #ffe6e6; /* vermelho clarinho */
+  text-align: center;
+}
+
+.etapas h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #7f0000;
+}
+
+.etapas-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.etapa {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.numero {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b22222;
+  margin-bottom: 1rem;
+}
+
+/* Benefícios */
+.beneficios {
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.beneficios h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #7f0000;
+  text-align: center;
+}
+
+.beneficios ul {
+  list-style: disc inside;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Nova seção Conheça Nossas Soluções */
+.solucoes {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  background-color: #ffe6e6; /* vermelho clarinho */
+}
+
+.solucoes h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #7f0000;
+}
+
+.solucoes-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.solucao-item {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  flex: 0 0 300px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.foto-pequena {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem auto;
+}
+
+.foto-pequena img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.solucao-item h3 {
+  margin-bottom: 0.5rem;
+  color: #b22222;
+  font-size: 1.25rem;
+}
+
+.solucao-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn-saiba-mais {
+  display: block;
+  max-width: 200px;
+  margin: 2rem auto 0 auto;
+  background-color: #b22222;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.btn-saiba-mais:hover {
+  background-color: #7f0000;
+}
+
+/* Sobre Nós */
+.sobre {
+  padding: 3rem 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7f0000;
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.btn-sobre {
+  background-color: #7f0000;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sobre:hover {
+  background-color: #b22222;
+}
+
+/* Rodapé */
+.bg-footer {
+  background-color: #4b0000;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Responsividade básica */
+@media (max-width: 900px) {
+  .etapas-grid,
+  .solucoes-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .solucao-item,
+  .etapa {
+    max-width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-negociar {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .etapa .numero {
+    font-size: 1.5rem;
+  }
+
+  .solucao-item h3 {
+    font-size: 1.1rem;
+  }
+}
+/* Estilos adicionais para a seção de soluções */
+.solucoes-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
